@@ -1,6 +1,7 @@
 #
 # Conditional build:
 # _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Devel
 %define	pnam	Profiler
@@ -13,7 +14,8 @@ License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl-devel >= 5.6
-%if %{?_without_tests:0}%{!?_without_tests:1}
+BuildRequires:	perl-tools-devel
+%if %{!?_without_tests:1}0
 BuildRequires:	perl-Test-Simple
 BuildRequires:	perl-Time-HiRes
 %endif
