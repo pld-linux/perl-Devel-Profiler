@@ -9,7 +9,7 @@ Summary:	Devel::Profiler - a Perl profiler compatible with dprofpp
 Summary(pl):	Devel::Profiler - profiler dla Perla kompatybilny z dprofpp
 Name:		perl-Devel-Profiler
 Version:	0.04
-Release:	3
+Release:	4
 # same as perl 5
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -19,7 +19,6 @@ BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-tools-devel
 %if %{with tests}
 BuildRequires:	perl-Test-Simple
-BuildRequires:	perl-Time-HiRes
 %endif
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
