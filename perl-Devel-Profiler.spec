@@ -17,7 +17,7 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 # Source0-md5:	c52d615e3083defd2c71726f21b2127a
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	perl-tools-devel
-%if %{?with tests}
+%if %{with tests}
 BuildRequires:	perl-Test-Simple
 BuildRequires:	perl-Time-HiRes
 %endif
