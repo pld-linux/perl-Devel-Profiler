@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Devel
-%define	pnam	Profiler
+%define		pdir	Devel
+%define		pnam	Profiler
 Summary:	Devel::Profiler - a Perl profiler compatible with dprofpp
 Summary(pl):	Devel::Profiler - profiler dla Perla kompatybilny z dprofpp
 Name:		perl-Devel-Profiler
