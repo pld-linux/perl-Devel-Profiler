@@ -8,7 +8,7 @@ Summary:	Devel::Profiler - a Perl profiler compatible with dprofpp
 Summary(pl):	Devel::Profiler - profiler dla Perla kompatybilny z dprofpp
 Name:		perl-Devel-Profiler
 Version:	0.04
-Release:	1
+Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
