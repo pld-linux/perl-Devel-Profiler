@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Devel
@@ -16,7 +16,7 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 # Source0-md5:	c52d615e3083defd2c71726f21b2127a
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	perl-tools-devel
-%if %{!?_without_tests:1}0
+%if %{?with tests}
 BuildRequires:	perl-Test-Simple
 BuildRequires:	perl-Time-HiRes
 %endif
@@ -42,7 +42,7 @@ analizuj±cym z Devel::DProf. Ma byæ zastepnikiem Devel::DProf.
 	INSTALLDIRS=vendor
 %{__make}
 
-%{!?_without_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
