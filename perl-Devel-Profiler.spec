@@ -39,7 +39,7 @@ analizuj±cym z Devel::DProf. Ma byæ zastepnikiem Devel::DProf.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %{!?_without_tests:%{__make} test}
