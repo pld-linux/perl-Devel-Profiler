@@ -6,7 +6,7 @@
 %define		pdir	Devel
 %define		pnam	Profiler
 Summary:	Devel::Profiler - a Perl profiler compatible with dprofpp
-Summary(pl):	Devel::Profiler - profiler dla Perla kompatybilny z dprofpp
+Summary(pl.UTF-8):   Devel::Profiler - profiler dla Perla kompatybilny z dprofpp
 Name:		perl-Devel-Profiler
 Version:	0.04
 Release:	4
@@ -29,10 +29,10 @@ This module implements a Perl profiler that outputs profiling data in
 a format compatible with dprofpp, Devel::DProf's profile analysis
 tool. It is meant to be a drop-in replacement for Devel::DProf.
 
-%description -l pl
-Ten modu³ jest implementacj± perlowego profilera, który zapisuje dane
-profiluj±ce w formacie kompatybilnym z dprofpp, czyli narzêdziem
-analizuj±cym z Devel::DProf. Ma byæ zastepnikiem Devel::DProf.
+%description -l pl.UTF-8
+Ten moduÅ‚ jest implementacjÄ… perlowego profilera, ktÃ³ry zapisuje dane
+profilujÄ…ce w formacie kompatybilnym z dprofpp, czyli narzÄ™dziem
+analizujÄ…cym z Devel::DProf. Ma byÄ‡ zastepnikiem Devel::DProf.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
