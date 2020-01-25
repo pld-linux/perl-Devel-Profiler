@@ -4,7 +4,6 @@
 
 %define		pdir	Devel
 %define		pnam	Profiler
-%include	/usr/lib/rpm/macros.perl
 Summary:	Devel::Profiler - a Perl profiler compatible with dprofpp
 Summary(pl.UTF-8):	Devel::Profiler - profiler dla Perla kompatybilny z dprofpp
 Name:		perl-Devel-Profiler
